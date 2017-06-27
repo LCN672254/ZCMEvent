@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pk5-M9-uBS">
+                                <rect key="frame" x="51" y="28" width="272" height="305.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXc-PF-hY8">
+                                <rect key="frame" x="67" y="341.5" width="240" height="305.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pk5-M9-uBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="4za-yR-ZDR"/>
+                            <constraint firstAttribute="trailing" secondItem="kXc-PF-hY8" secondAttribute="trailing" constant="68" id="DzV-XF-69J"/>
+                            <constraint firstItem="kXc-PF-hY8" firstAttribute="top" secondItem="pk5-M9-uBS" secondAttribute="bottom" constant="8" id="SLI-Gj-KsV"/>
+                            <constraint firstItem="pk5-M9-uBS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Tjw-ux-KdU"/>
+                            <constraint firstItem="kXc-PF-hY8" firstAttribute="top" secondItem="pk5-M9-uBS" secondAttribute="bottom" constant="8" id="duP-rb-FJy"/>
+                            <constraint firstItem="kXc-PF-hY8" firstAttribute="height" secondItem="pk5-M9-uBS" secondAttribute="height" id="ev1-gK-EkF"/>
+                            <constraint firstAttribute="trailing" secondItem="pk5-M9-uBS" secondAttribute="trailing" constant="52" id="lkg-4s-kCK"/>
+                            <constraint firstItem="kXc-PF-hY8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="wu5-jP-bPU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kXc-PF-hY8" secondAttribute="bottom" constant="20" id="zWk-CI-byO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="onebgView" destination="pk5-M9-uBS" id="SRP-rU-r0n"/>
+                        <outlet property="twobgView" destination="kXc-PF-hY8" id="6J2-Og-mwM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
     </scenes>
 </document>

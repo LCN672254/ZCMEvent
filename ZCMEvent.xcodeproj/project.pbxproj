@@ -13,6 +13,12 @@
 		BE4EB1921F022C5E00EEC385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB1901F022C5E00EEC385 /* Main.storyboard */; };
 		BE4EB1941F022C5E00EEC385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB1931F022C5E00EEC385 /* Assets.xcassets */; };
 		BE4EB1971F022C5E00EEC385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB1951F022C5E00EEC385 /* LaunchScreen.storyboard */; };
+		BE4EB1A41F022CB900EEC385 /* ZCMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB1A01F022CB900EEC385 /* ZCMEvent.m */; };
+		BE4EB1A51F022CB900EEC385 /* ZCMBaseEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB1A21F022CB900EEC385 /* ZCMBaseEventViewController.m */; };
+		BE4EB1A91F02348C00EEC385 /* ZCMDemoOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB1A71F02348C00EEC385 /* ZCMDemoOneViewController.m */; };
+		BE4EB1AA1F02348C00EEC385 /* ZCMDemoOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB1A81F02348C00EEC385 /* ZCMDemoOneViewController.xib */; };
+		BE4EB1AE1F0234A700EEC385 /* ZCMDemoTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB1AC1F0234A700EEC385 /* ZCMDemoTwoViewController.m */; };
+		BE4EB1AF1F0234A700EEC385 /* ZCMDemoTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB1AD1F0234A700EEC385 /* ZCMDemoTwoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		BE4EB1931F022C5E00EEC385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE4EB1961F022C5E00EEC385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE4EB1981F022C5E00EEC385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4EB19F1F022CB900EEC385 /* ZCMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMEvent.h; sourceTree = "<group>"; };
+		BE4EB1A01F022CB900EEC385 /* ZCMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMEvent.m; sourceTree = "<group>"; };
+		BE4EB1A11F022CB900EEC385 /* ZCMBaseEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMBaseEventViewController.h; sourceTree = "<group>"; };
+		BE4EB1A21F022CB900EEC385 /* ZCMBaseEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMBaseEventViewController.m; sourceTree = "<group>"; };
+		BE4EB1A31F022CB900EEC385 /* ZCMEventTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMEventTypeDef.h; sourceTree = "<group>"; };
+		BE4EB1A61F02348C00EEC385 /* ZCMDemoOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMDemoOneViewController.h; sourceTree = "<group>"; };
+		BE4EB1A71F02348C00EEC385 /* ZCMDemoOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMDemoOneViewController.m; sourceTree = "<group>"; };
+		BE4EB1A81F02348C00EEC385 /* ZCMDemoOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCMDemoOneViewController.xib; sourceTree = "<group>"; };
+		BE4EB1AB1F0234A700EEC385 /* ZCMDemoTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCMDemoTwoViewController.h; sourceTree = "<group>"; };
+		BE4EB1AC1F0234A700EEC385 /* ZCMDemoTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCMDemoTwoViewController.m; sourceTree = "<group>"; };
+		BE4EB1AD1F0234A700EEC385 /* ZCMDemoTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCMDemoTwoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +75,18 @@
 		BE4EB1861F022C5E00EEC385 /* ZCMEvent */ = {
 			isa = PBXGroup;
 			children = (
+				BE4EB19E1F022CA700EEC385 /* Event */,
 				BE4EB18A1F022C5E00EEC385 /* AppDelegate.h */,
 				BE4EB18B1F022C5E00EEC385 /* AppDelegate.m */,
 				BE4EB18D1F022C5E00EEC385 /* ViewController.h */,
 				BE4EB18E1F022C5E00EEC385 /* ViewController.m */,
 				BE4EB1901F022C5E00EEC385 /* Main.storyboard */,
+				BE4EB1A61F02348C00EEC385 /* ZCMDemoOneViewController.h */,
+				BE4EB1A71F02348C00EEC385 /* ZCMDemoOneViewController.m */,
+				BE4EB1A81F02348C00EEC385 /* ZCMDemoOneViewController.xib */,
+				BE4EB1AB1F0234A700EEC385 /* ZCMDemoTwoViewController.h */,
+				BE4EB1AC1F0234A700EEC385 /* ZCMDemoTwoViewController.m */,
+				BE4EB1AD1F0234A700EEC385 /* ZCMDemoTwoViewController.xib */,
 				BE4EB1931F022C5E00EEC385 /* Assets.xcassets */,
 				BE4EB1951F022C5E00EEC385 /* LaunchScreen.storyboard */,
 				BE4EB1981F022C5E00EEC385 /* Info.plist */,
@@ -77,6 +101,18 @@
 				BE4EB1881F022C5E00EEC385 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4EB19E1F022CA700EEC385 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EB19F1F022CB900EEC385 /* ZCMEvent.h */,
+				BE4EB1A01F022CB900EEC385 /* ZCMEvent.m */,
+				BE4EB1A11F022CB900EEC385 /* ZCMBaseEventViewController.h */,
+				BE4EB1A21F022CB900EEC385 /* ZCMBaseEventViewController.m */,
+				BE4EB1A31F022CB900EEC385 /* ZCMEventTypeDef.h */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4EB1971F022C5E00EEC385 /* LaunchScreen.storyboard in Resources */,
+				BE4EB1AA1F02348C00EEC385 /* ZCMDemoOneViewController.xib in Resources */,
 				BE4EB1941F022C5E00EEC385 /* Assets.xcassets in Resources */,
+				BE4EB1AF1F0234A700EEC385 /* ZCMDemoTwoViewController.xib in Resources */,
 				BE4EB1921F022C5E00EEC385 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4EB18F1F022C5E00EEC385 /* ViewController.m in Sources */,
+				BE4EB1A41F022CB900EEC385 /* ZCMEvent.m in Sources */,
 				BE4EB18C1F022C5E00EEC385 /* AppDelegate.m in Sources */,
+				BE4EB1A51F022CB900EEC385 /* ZCMBaseEventViewController.m in Sources */,
+				BE4EB1AE1F0234A700EEC385 /* ZCMDemoTwoViewController.m in Sources */,
 				BE4EB1891F022C5E00EEC385 /* main.m in Sources */,
+				BE4EB1A91F02348C00EEC385 /* ZCMDemoOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
